@@ -20,7 +20,7 @@ $(function () {
         // 发送登录请求
         $.ajax({
             type:'post',
-            url:`${APP.beseUrl}/employee/employeeLogin`,
+            url:`${APP.baseUrl}/employee/employeeLogin`,
             data:result,
             success:function (response) {
                 if (response.success) {
@@ -34,3 +34,4 @@ $(function () {
         })
     })  
 })
+console.log(`${APP.beseUrl}/employee/employeeLogin`)

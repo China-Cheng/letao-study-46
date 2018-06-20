@@ -11,7 +11,7 @@ $(function(){
 
 });
 
-
+$.ajaxSetup({crossDomain: true, xhrFields: {withCredentials: true}});
 // 全局配置
 var APP = {
     // 接口的基础配置
