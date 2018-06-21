@@ -37,7 +37,6 @@ $(function () {
     $('#fileUpload').fileupload({
         dataType: 'json',
         done: function (e, data) {
-            console.log(data);
             // 存储图片地址
             brandLogo = data._response.result.picAddr;
             // 拼接图片url
